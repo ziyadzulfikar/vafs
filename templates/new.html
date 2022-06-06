@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <div class='mid'>
+          <h1 class='textMain'>New Case</h1>
+          <hr style="background: white;" />
+          <br />
+          <span>
+            <div class='innerWidth mx-auto'>
+              <form action="gender" method="get">
+                <Form class="mb-3" controlId="formBasicEmail">
+                  <Form class='textAll'>Name</Form>
+                  <Form type="email" placeholder="Enter Name" required>
+                  
+                </Form>
+                <Form class="mb-3" controlId="formBasicEmail">
+                  <Form class='textAll'>Case File</Form>
+                  <Form type="email" placeholder="Enter Case File Name">
+                  
+                </Form>
+                <Form class="mb-3" controlId="formBasicEmail">
+                  <Form class='textAll'>Suspect Name</Form>
+                  <Form type="email" placeholder="Enter Suspect Name">
+                  
+                </Form>
+                <br />
+                <hr style="background: white" />
+                <div><Button variant="success" type='submit' class="my-2">Submit</Button></div>
+              </form>
+            </div> 
+          </span>
+        </div>
+    </div>
+{% endblock %}
