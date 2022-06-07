@@ -7,26 +7,27 @@
           <hr style="background: white;" />
           <br />
           <span>
-            <div class='innerWidth mx-auto'>
-              <form action="gender" method="get">
-                <Form class="mb-3" controlId="formBasicEmail">
-                  <Form class='textAll'>Name</Form>
-                  <Form type="email" placeholder="Enter Name" required>
+            <div class='innerWidth'>
+              <form action="new" method="post">
+                {% csrf_token %}
+                <div class="mb-3" controlId="formBasicEmail">
+                  <label class='textAll'>Name</label>
+                  <input type="text" name="name" placeholder="Enter Name" required>
                   
-                </Form>
-                <Form class="mb-3" controlId="formBasicEmail">
-                  <Form class='textAll'>Case File</Form>
-                  <Form type="email" placeholder="Enter Case File Name">
+                </div>
+                <div class="mb-3" controlId="formBasicEmail">
+                  <label class='textAll'>Case File</label>
+                  <input type="text" name="caseFile" placeholder="Enter Case File Name">
                   
-                </Form>
-                <Form class="mb-3" controlId="formBasicEmail">
-                  <Form class='textAll'>Suspect Name</Form>
-                  <Form type="email" placeholder="Enter Suspect Name">
+                </div>
+                <div class="mb-3" controlId="formBasicEmail">
+                  <label class='textAll'>Suspect Name</label>
+                  <input type="text" name="suspectName" placeholder="Enter Suspect Name">
                   
-                </Form>
+                </div>
                 <br />
                 <hr style="background: white" />
-                <div><Button variant="success" type='submit' class="my-2">Submit</Button></div>
+                <div><button name="submit" type='submit' class="my-2 btn btn-success">Submit</button></div>
               </form>
             </div> 
           </span>

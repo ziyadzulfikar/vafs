@@ -6,20 +6,20 @@
         <div class="micBack">
             <div></div>
             <div class='micO'></div>
-            <p>Click on the below button and speak something...</p>
-            <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p> -->
-            <button style="float : right; margin-top: 2vw;" class="btn btn-danger">Skip</button>
-        </div>
+          </div>
+          <p style="color: white;">Click on the below button and speak something...</p>
+          <p style="color: white;"><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p> -->
+          <!-- <button style="float : right; margin-top: 2vw;" class="btn btn-danger">Skip</button> -->
+          <form action="textSpeech" method="get">
+            <!-- <input style="color: white;" id="output" name="id" class="hide"> -->
+            <textarea name="TextSp" id="output" cols="30" class="hide" rows="10" hidden></textarea>
+            <input type="hidden" value="#output">
+            <button style="float : right;" class="btn btn-success" type="submit">next</button>
+          </form>
     </div>
     <!-- <h2>JavaScript Speech to Text</h2>
     <p>Click on the below button and speak something...</p>
-    <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p> -->\
-    <form action="textSpeech" method="get">
-      <!-- <input style="color: white;" id="output" name="id" class="hide"> -->
-      <textarea name="TextSp" id="output" cols="30" class="hide" rows="10"></textarea>
-      <input type="hidden" value="#output">
-      <button type="submit">next</button>
-    </form>
+    <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p> -->
 
 <script>
   /* JS comes here */
@@ -56,3 +56,4 @@
       }
 </script>
 {% endblock %}
+

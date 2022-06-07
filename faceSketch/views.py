@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 
@@ -9,7 +9,13 @@ def face(request):
     return render(request, 'face.html')
 
 def new(request):
-    return render(request, 'new.html')
+    if(request.method == 'POST'):
+        name = request.POST["name"]
+        caseFile = request.POST["caseFile"]
+        suspectName = request.POST["suspectName"]
+        return render(request, 'describe.html')
+    else:
+        return render(request, 'new.html')
 
 def saved(request):
     return render(request, 'saved.html')

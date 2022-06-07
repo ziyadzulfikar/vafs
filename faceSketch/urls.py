@@ -11,6 +11,6 @@ urlpatterns = [
     path('about', views.about, name = 'about'),
     path('close', views.close, name = 'close'),
     path('gender', views.gender, name = 'gender'),
-    path('Describe', views.describe, name = 'describe'),
+    # path('Describe', views.describe, name = 'describe'),
     path('textSpeech', views.textSpeech, name = 'textSpeech'),
 ]
